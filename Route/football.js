@@ -16,4 +16,65 @@ Route.get('/', function (req, res){
 });
 
 
+Route.get('/LionelMessi', function (req, res){
+    res.json(fp1);
+});
+
+Route.get('/CristianoRonaldo', function (req, res){
+    res.json(fp2);
+});
+
+Route.get('/NeymarJr.', function (req, res){
+    res.json(fp3);
+});
+
+
+Route.get('/EdenHazard', function (req, res){
+    res.json(fp4);
+});
+
+
+Route.get('/KevinDeBruyne', function (req, res){
+    res.json(fp5);
+});
+
+
+Route.get('/JanOblak', function (req, res){
+    res.json(fp6);
+});
+
+
+Route.get('/VirgilVanDijk', function (req, res){
+    res.json(fp7);
+});
+
+
+Route.get('/MohamedSalah', function (req, res){
+    res.json(fp8);
+});
+
+
+Route.get('/LukaModric', function (req, res){
+    res.json(fp9);
+});
+
+
+Route.get('/Marc-AndreterStegen', function (req, res){
+    res.json(fp10);
+});
+
+
+
 module.exports =Route;
+
+
+module.exports.fp1=fp1;
+module.exports.fp2=fp2;
+module.exports.fp3=fp3;
+module.exports.fp4=fp4;
+module.exports.fp5=fp5;
+module.exports.fp6=fp6;
+module.exports.fp7=fp7;
+module.exports.fp8=fp8;
+module.exports.fp9=fp9;
+module.exports.fp10=fp10;
