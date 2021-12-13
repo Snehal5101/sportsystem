@@ -27,10 +27,18 @@ let cricketarr=[{PlayerName:"Babar Azam",Country:"Pakistan",Rank:1},
 
 // });
 // console.log(player);
- 
+
+// let newarr= cricketarr.concat(" ",{PlayerName: "Kylian Mbappe", Clubname: "Paris Saint-Germain",Rank: 11});
+//  console.log(newarr);
 
 
+ Route.post('/insert', function (req, res)
+{   let data=req.body ;
+    let newarr=cricketarr.concat(" ", data);
 
+    res.send(newarr);
+   
+});
 
 
 Route.get('/', function (req, res){

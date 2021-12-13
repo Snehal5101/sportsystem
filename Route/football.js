@@ -23,6 +23,16 @@ Route.get('/:name', function (req, res){
     res.send(footballarr[player]);
 });
 
+
+Route.post('/insert', function (req, res)
+{   let data=req.body ;
+    let newarr=footballarr.concat(" ", data);
+
+    res.send(newarr);
+   
+});
+
+
 // Route.get('/LionelMessi', function (req, res){
 //     res.json(fp1);
 // });
@@ -73,6 +83,7 @@ Route.get('/:name', function (req, res){
 
 
 module.exports =Route;
+module.exports.footballarr=footballarr;
 
 
 // module.exports.fp1=fp1;
